@@ -1,0 +1,11 @@
+.Sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Nome-Da-Empresa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}

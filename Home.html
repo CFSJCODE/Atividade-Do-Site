@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style - Atividade Do Site - Home.css">
+    <link rel="stylesheet" href="Menu-Right.css">
+    <title>Home</title>
+
+    <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        // adicione um zero na frente de números<10
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+        t=setTimeout('startTime()',500);
+        }
+        function checkTime(i)
+        {
+        if (i<10)
+        {
+        i="0" + i;
+        }
+        return i;
+        }
+        </script>
+
+</head>
+<body onload="startTime()">
+    
+        <div class="Menu-Right">
+            <a href="Página Inicial.html" class="Menu"> <button class="Menu-Button">Menu</button></a>
+        </div>
+        
+    <div class="Frase">
+        <h1>A Tecnologia É O Futuro Da Humanidade</h1>
+    </div>
+    
+    <div class="Imagem-Central">
+        <img src="Imagem Central.jpg" alt="Imagem-Central">
+    </div>   
+    
+    <div class="Time" id="txt"></div>
+
+</body>
+
+</html>

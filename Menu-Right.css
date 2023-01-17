@@ -1,0 +1,17 @@
+.Menu-Right{
+    display: flex;
+      justify-content: right;
+      align-items: center;
+  }
+  .Menu-Button {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    align-items: center; 
+  }
+  
